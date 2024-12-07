@@ -3,62 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
-    <style>
-        body {
-            background-color: black;
-            color: green;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            text-align: center;
-            padding: 30px;
-            background-color: #111;
-        }
-        h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-        main {
-            padding: 20px;
-            background-color: black;
-        }
-        footer {
-            background-color: #111;
-            color: green;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header>
-    <h1>My Resume</h1>
-</header>
-
-<main>
-    <h2>About Me</h2>
-    <p>Welcome to my online resume! I am a web developer with a passion for creating modern, responsive websites. Here's a brief overview of my skills:</p>
-
-    <h3>Skills</h3>
-    <ul>
-        <li>HTML & CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Python</li>
-    </ul>
-</main>
-
-<footer>
-    <p>&copy; 2024 My Resume</p>
-</footer>
-
+    <div class="floating-content">
+        <div class="container">
+            <div class="sidebar">
+                <div class="profile">
+                    <img src="/images/Profile.jpg" alt="Profile Picture">
+                    <h2>Noah Campbell</h2>
+                    <p class="title">IT Support Assistant</p>
+                </div>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="contact.html">Contact</a>
+                </nav>                
+                <div class="social-links">
+                    <a href="https://secopsstories.wordpress.com/">🌐 SecOps Stories</a>
+                    <a href="https://www.linkedin.com/in/noah-campbell-7a6b86240/">💬 LinkedIn</a>
+                    <a href="https://github.com/TheWolf-101?tab=repositories">✍️ GitHub</a>
+                    <a href="mailto:technoahology@gmail.com">✉️ Email</a>
+                </div>
+            </div>
+            <div class="main">
+                <section class="resume">
+                    <h1>resume</h1>
+                    <p>5 years of IT Support / 2 years of Cloud and AWS</p>
+                    <p>
+                    I'm an IT professional on a journey to learn everything I can about computers
+                    and everything IT related. I love to create things, programs, scripts, etc.
+                    I own and operate a 3D printer which I use to create both functional and interesting objects
+                    which you can find more of on my <a href="skills.html">Skills</a> page. 
+                    </p>
+                </section>
+                <section class="skills">
+                    <h2>Skills</h2>
+                    <div class="skill">
+                        <span>Ticketing System (ManageEngine SupportCenter Plus)</span>
+                        <div class="progress"><div style="width: 91%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>Understanding of DNS, DHCP, TCP/IP, VPNs, firewalls, and load balancers.</span>
+                        <div class="progress"><div style="width: 75%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>Windows OS & macOS fluency</span>
+                        <div class="progress"><div style="width: 98%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>Expertise in Linux/Unix and Windows Server management.</span>
+                        <div class="progress"><div style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>Shell scripting (Bash, PowerShell).</span>
+                        <div class="progress"><div style="width: 60%;"></div></div>
+                    </div>
+                    <div class="certifications">
+                        <div class="card">
+                            <img src="/images/CompTIA_A+.png" alt="Certification 1">
+                            <h3>CompTIA A+</h3>
+                            <p>Issued by CompTIA</p>
+                        </div>
+                        <div class="card">
+                            <img src="/images/CompTIA_Network+.png" alt="Certification 2">
+                            <h3>CompTIA Network+</h3>
+                            <p>Issued by CompTIA</p>
+                        </div>
+                        <div class="card">
+                            <img src="/images/CompTIA_Security+.png" alt="Certification 3">
+                            <h3>CompTIA Security+</h3>
+                            <p>Issued by CompTIA</p>
+                        </div>
+                        <div class="card">
+                            <img src="/images/AWS CCP.png" alt="Certification 4">
+                            <h3>AWS Certified Cloud Practitioner</h3>
+                            <p>Issued by AWS Training and Certification</p>
+                        </div>
+                        <div class="card">
+                            <img src="/images/SC-900.png" alt="Certification 5">
+                            <h3>Microsoft Certified: Security, Compliance, and Identity Fundamentals</h3>
+                            <p>Issued by Microsoft</p>
+                        </div>
+                    </div>                
+                </section>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
