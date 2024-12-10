@@ -31,7 +31,7 @@ body {
     display: flex;
     max-width: 750px;
     background: #000; /* Solid black */
-    color: #fff; /* White text */
+    color: #000000; /* White text */
     border-radius: 10px;
     overflow: auto;
     padding: 20px; /* Optional: Adds spacing inside the box */

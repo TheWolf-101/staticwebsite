@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: #383838;
     line-height: 1.6;
     overflow-x: hidden;
     height: 110vh; /* Ensures consistent height */
@@ -30,8 +30,8 @@ body {
 .container {
     display: flex;
     max-width: 750px;
-    background: #000; /* Solid black */
-    color: #fff; /* White text */
+    background: #00000085; /* Solid black */
+    color: #000000; /* White text */
     border-radius: 10px;
     overflow: auto;
     padding: 20px; /* Optional: Adds spacing inside the box */
@@ -39,7 +39,7 @@ body {
 }
 
 .container h1, .container h2, .container p, .container span {
-    color: #fff; /* Ensure all text is white */
+    color: #ffffff; /* Ensure all text is white */
 }
 
 .sidebar {
@@ -195,7 +195,7 @@ main {
 
 section {
     margin: 20px 0;
-    background: white;
+    background: rgb(0, 0, 0);
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

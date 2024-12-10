@@ -29,9 +29,9 @@ body {
 /* Layout Styles */
 .container {
     display: flex;
-    max-width: 750px;
-    background: #000; /* Solid black */
-    color: #fff; /* White text */
+    max-width: 1000px;
+    background: #00000085; /* Solid black */
+    color: #ffffff; /* White text */
     border-radius: 10px;
     overflow: auto;
     padding: 20px; /* Optional: Adds spacing inside the box */
@@ -39,7 +39,7 @@ body {
 }
 
 .container h1, .container h2, .container p, .container span {
-    color: #fff; /* Ensure all text is white */
+    color: #ffffff; /* Ensure all text is white */
 }
 
 .sidebar {
@@ -118,7 +118,7 @@ main {
 
 section {
     margin: 20px 0;
-    background: white;
+    background: rgb(0, 0, 0);
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
