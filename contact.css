@@ -30,9 +30,16 @@ body {
 .container {
     display: flex;
     max-width: 750px;
-    background: rgba(35, 35, 35, 0.76); /* Optimized color */
+    background: #000; /* Solid black */
+    color: #fff; /* White text */
     border-radius: 10px;
     overflow: auto;
+    padding: 20px; /* Optional: Adds spacing inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Optional: Shadow for depth */
+}
+
+.container h1, .container h2, .container p, .container span {
+    color: #fff; /* Ensure all text is white */
 }
 
 .sidebar {
