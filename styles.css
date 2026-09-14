@@ -18,16 +18,47 @@
 
 html {
     scroll-behavior: smooth;
+    min-height: 100%;
+    background: var(--bg);
+    overscroll-behavior-y: none;
 }
 
 body {
     margin: 0;
     min-height: 100vh;
+    min-height: 100dvh;
     font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
     color: var(--text);
+    background: var(--bg);
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Use a fixed layer instead of background-attachment: fixed. This is much
+   more reliable in iOS/iPadOS Safari and also keeps the root canvas dark
+   during rubber-band/overscroll at the bottom of the page. */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    pointer-events: none;
     background:
         linear-gradient(rgba(0, 18, 38, 0.56), rgba(0, 10, 22, 0.78)),
-        url('/images/Background.jpg') center / cover fixed no-repeat;
+        url('images/Background.jpg') center center / cover no-repeat;
+    background-color: var(--bg);
+    transform: translateZ(0);
+}
+
+/* Fallback dark canvas behind the image, so no white can appear if the image
+   is still loading or Safari exposes the page root while overscrolling. */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -3;
+    pointer-events: none;
+    background: var(--bg);
 }
 
 a {
@@ -119,6 +150,10 @@ a {
 }
 
 .page-shell {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    min-height: 100dvh;
     margin-left: 260px;
     width: calc(100% - 260px);
     padding: 28px;
