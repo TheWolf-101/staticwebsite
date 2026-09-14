@@ -3,93 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <meta name="description" content="Noah Campbell - IT support, security, automation, and cloud portfolio.">
+    <title>Noah Campbell | IT Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="floating-content">
-        <div class="container">
-            <div class="sidebar">
-                <div class="profile">
-                    <img src="/images/Profile.jpg" alt="Profile Picture">
-                    <h2>Noah Campbell</h2>
-                    <p class="title">IT Support Assistant</p>
-                </div>
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="skills.html">Skills</a>
-                    <a href="contact.html">Contact</a>
-                </nav>                
-                <div class="social-links">
-                    <a href="https://secopsstories.wordpress.com/">🌐 SecOps Stories</a>
-                    <a href="https://www.linkedin.com/in/noah-campbell-7a6b86240/">💬 LinkedIn</a>
-                    <a href="https://github.com/TheWolf-101?tab=repositories">✍️ GitHub</a>
-                    <a href="mailto:technoahology@gmail.com">✉️ Email</a>
-                </div>
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="/images/Profile.jpg" alt="Noah Campbell">
+            <h1>Noah Campbell</h1>
+            <p class="role">IT Support Professional</p>
+            <p class="focus">Security · Automation · Cloud</p>
+        </div>
+
+        <nav class="nav-links" aria-label="Primary navigation">
+            <a class="active" href="index.html">Home</a>
+            <a href="#experience">Experience</a>
+            <a href="skills.html">Skills</a>
+            <a href="#certifications">Certifications</a>
+            <a href="skills.html#projects">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="sidebar-links">
+            <a href="https://www.linkedin.com/in/noah-campbell-7a6b86240/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/TheWolf-101?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:technoahology@gmail.com">Email</a>
+        </div>
+    </aside>
+
+    <main class="page-shell">
+        <section class="hero panel">
+            <p class="eyebrow">IT SUPPORT &nbsp;|&nbsp; SYSTEMS &nbsp;|&nbsp; SECURITY &nbsp;|&nbsp; AUTOMATION &nbsp;|&nbsp; CLOUD</p>
+            <h2>Noah Campbell</h2>
+            <h3>IT Support Professional</h3>
+            <p class="hero-copy">
+                I work across IT support, systems administration, security, and automation. I enjoy solving difficult problems,
+                improving workflows, and building tools that make day-to-day IT operations more reliable and efficient.
+            </p>
+            <div class="hero-actions">
+                <a class="button" href="mailto:technoahology@gmail.com">Email Me</a>
+                <a class="button secondary" href="https://www.linkedin.com/in/noah-campbell-7a6b86240/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a class="button secondary" href="https://github.com/TheWolf-101?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
-            <div class="main">
-                <section class="resume">
-                    <h1>resume</h1>
-                    <p>5 years of IT Support L1 & L2 / 2 years of Cloud and AWS</p>
-                    <p>
-                    I'm an IT professional on a journey to learn everything I can about computers
-                    and everything IT related. I love to create things, programs, scripts, etc.
-                    I own and operate a 3D printer which I use to create both functional and interesting objects
-                    which you can find more of on my <a href="skills.html">skills</a> page. 
-                    </p>
+        </section>
+
+        <div class="dashboard-grid">
+            <section class="panel experience-panel" id="experience">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-kicker">EXPERIENCE</p>
+                        <h2>What I work with</h2>
+                    </div>
+                </div>
+
+                <article class="job-card">
+                    <div class="job-heading">
+                        <div>
+                            <h3>IT Support / Systems Operations</h3>
+                            <p>Liberated Brands / Volcom</p>
+                        </div>
+                        <span>Enterprise IT</span>
+                    </div>
+                    <ul>
+                        <li>Support users, endpoints, networking, and retail technology across a multi-brand environment.</li>
+                        <li>Work in Jira Service Management (JSM/Jira) for incident, request, and workflow tracking.</li>
+                        <li>Administer and troubleshoot Okta identity and access workflows, including users, groups, SSO, and MFA.</li>
+                        <li>Use Rapid7 to identify vulnerabilities, review risk, and coordinate vulnerability remediation.</li>
+                        <li>Build Tines flows and automations to reduce repetitive IT and security work.</li>
+                        <li>Investigate phishing, suspicious activity, and other security-related incidents.</li>
+                        <li>Configure and support endpoints, network equipment, firewalls, cameras, and retail systems.</li>
+                        <li>Create scripts, documentation, and repeatable processes to improve support operations.</li>
+                    </ul>
+                </article>
+
+                <article class="job-card compact-job">
+                    <div class="job-heading">
+                        <div>
+                            <h3>Advanced Repair Agent</h3>
+                            <p>Best Buy Geek Squad</p>
+                        </div>
+                        <span>Technical Support</span>
+                    </div>
+                    <ul>
+                        <li>Diagnosed and repaired Windows and macOS systems in a high-volume support environment.</li>
+                        <li>Investigated malicious activity and distinguished real incidents from false positives.</li>
+                        <li>Built, upgraded, configured, and repaired custom and prebuilt computers.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <div class="right-column">
+                <section class="panel" id="skills">
+                    <div class="section-heading">
+                        <div>
+                            <p class="section-kicker">SKILLS</p>
+                            <h2>Technical toolkit</h2>
+                        </div>
+                        <a class="text-link" href="skills.html">View more →</a>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Jira Service Management</span>
+                        <span>Okta Admin</span>
+                        <span>Rapid7</span>
+                        <span>Tines</span>
+                        <span>Vulnerability Remediation</span>
+                        <span>PowerShell</span>
+                        <span>Python</span>
+                        <span>Bash</span>
+                        <span>Windows</span>
+                        <span>macOS</span>
+                        <span>Linux / Unix</span>
+                        <span>Active Directory</span>
+                        <span>Networking</span>
+                        <span>DNS / DHCP / TCP/IP</span>
+                        <span>VPNs / Firewalls</span>
+                        <span>AWS</span>
+                        <span>Nmap</span>
+                        <span>Wireshark</span>
+                        <span>Endpoint Management</span>
+                        <span>Automation</span>
+                    </div>
                 </section>
-                <section class="skills">
-                    <h2>Skills</h2>
-                    <div class="skill">
-                        <span>Ticketing System (ManageEngine SupportCenter Plus)</span>
-                        <div class="progress"><div style="width: 91%;"></div></div>
+
+                <section class="panel" id="certifications">
+                    <div class="section-heading">
+                        <div>
+                            <p class="section-kicker">CERTIFICATIONS</p>
+                            <h2>Credentials</h2>
+                        </div>
                     </div>
-                    <div class="skill">
-                        <span>Understanding of DNS, DHCP, TCP/IP, VPNs, firewalls, and load balancers.</span>
-                        <div class="progress"><div style="width: 75%;"></div></div>
-                    </div>
-                    <div class="skill">
-                        <span>Windows OS & macOS fluency</span>
-                        <div class="progress"><div style="width: 98%;"></div></div>
-                    </div>
-                    <div class="skill">
-                        <span>Expertise in Linux/Unix and Windows Server management.</span>
-                        <div class="progress"><div style="width: 85%;"></div></div>
-                    </div>
-                    <div class="skill">
-                        <span>Shell scripting (Bash, PowerShell).</span>
-                        <div class="progress"><div style="width: 60%;"></div></div>
-                    </div>
-                    <div class="certifications">
-                        <div class="card">
-                            <img src="/images/CompTIA_A+.png" alt="Certification 1">
+                    <div class="cert-grid">
+                        <article class="cert-card">
+                            <img src="/images/CompTIA_A+.png" alt="CompTIA A+ badge">
                             <h3>CompTIA A+</h3>
-                            <p>Issued by CompTIA</p>
-                        </div>
-                        <div class="card">
-                            <img src="/images/CompTIA_Network+.png" alt="Certification 2">
+                        </article>
+                        <article class="cert-card">
+                            <img src="/images/CompTIA_Network+.png" alt="CompTIA Network+ badge">
                             <h3>CompTIA Network+</h3>
-                            <p>Issued by CompTIA</p>
-                        </div>
-                        <div class="card">
-                            <img src="/images/CompTIA_Security+.png" alt="Certification 3">
+                        </article>
+                        <article class="cert-card">
+                            <img src="/images/CompTIA_Security+.png" alt="CompTIA Security+ badge">
                             <h3>CompTIA Security+</h3>
-                            <p>Issued by CompTIA</p>
-                        </div>
-                        <div class="card">
-                            <img src="/images/AWS CCP.png" alt="Certification 4">
-                            <h3>AWS Certified Cloud Practitioner</h3>
-                            <p>Issued by AWS Training and Certification</p>
-                        </div>
-                        <div class="card">
-                            <img src="/images/SC-900.png" alt="Certification 5">
-                            <h3>Microsoft Certified: Security, Compliance, and Identity Fundamentals</h3>
-                            <p>Issued by Microsoft</p>
-                        </div>
-                    </div>                
+                        </article>
+                        <article class="cert-card">
+                            <img src="/images/AWS CCP.png" alt="AWS Certified Cloud Practitioner badge">
+                            <h3>AWS Cloud Practitioner</h3>
+                        </article>
+                        <article class="cert-card">
+                            <img src="/images/SC-900.png" alt="Microsoft SC-900 badge">
+                            <h3>Microsoft SC-900</h3>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="panel progress-panel">
+                    <p class="section-kicker">CURRENTLY LEARNING</p>
+                    <h2>AWS Solutions Architect – Associate</h2>
+                    <p>Continuing to build deeper AWS architecture and cloud engineering skills.</p>
                 </section>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 </html>

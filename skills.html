@@ -3,88 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills</title>
-    <link rel="stylesheet" href="skills.css">
+    <title>Skills | Noah Campbell</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Sidebar Section -->
-        <div class="sidebar">
-            <div class="profile">
-                <img src="/images/Profile.jpg" alt="Profile Picture">
-                <h2>Noah Campbell</h2>
-                <p class="title">IT Support Assistant</p>
-            </div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="skills.html">Skills</a>
-                <a href="contact.html">Contact</a>
-            </nav>                
-            <div class="social-links">
-                <a href="https://secopsstories.wordpress.com/">🌐 SecOps Stories</a>
-                <a href="https://www.linkedin.com/in/noah-campbell-7a6b86240/">💬 LinkedIn</a>
-                <a href="https://github.com/TheWolf-101?tab=repositories">✍️ GitHub</a>
-                <a href="mailto:technoahology@gmail.com">✉️ Email</a>
-            </div>
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="/images/Profile.jpg" alt="Noah Campbell">
+            <h1>Noah Campbell</h1>
+            <p class="role">IT Support Professional</p>
+            <p class="focus">Security · Automation · Cloud</p>
         </div>
-        <!-- Main Content Section -->
-        <main class="main-content">
-            <!-- Resume Section -->
-            <section class="resume">
-                <h2>Synopsis</h2>
-                <p><a href="https://github.com/TheWolf-101?tab=repositories">Check out my repositories!</p></a>
-                <p>
-                    I’m an IT professional with experience supporting Fortune 500 companies and enhancing IT operations through system optimization and cybersecurity. Skilled in troubleshooting, PowerShell, Python, and networking tools, I’m passionate about creating impactful solutions.
+        <nav class="nav-links" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="index.html#experience">Experience</a>
+            <a class="active" href="skills.html">Skills</a>
+            <a href="index.html#certifications">Certifications</a>
+            <a href="#projects">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="sidebar-links">
+            <a href="https://www.linkedin.com/in/noah-campbell-7a6b86240/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/TheWolf-101?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:technoahology@gmail.com">Email</a>
+        </div>
+    </aside>
 
-Certified in CompTIA A+, Network+, Security+, AWS Cloud, and Microsoft SC-900, I bring expertise in IT support, security, and infrastructure management. Key achievements include streamlining imaging processes, identifying security risks, and ensuring seamless operations for global brands.
-                </p>
-            </section>
-
-            <!-- Skills Section -->
-            <section class="skills">
-                <h2>Technical Skills</h2>
-                <ul>
-                    <li>Ticketing System (ManageEngine SupportCenter Plus)</li>
-                    <li>DNS, DHCP, TCP/IP, VPNs, Firewalls, and Load Balancers</li>
-                    <li>Windows OS & macOS fluency</li>
-                    <li>Linux/Unix and Windows Server management</li>
-                    <li>Shell scripting (Bash, PowerShell)</li>
+    <main class="page-shell">
+        <div class="content-page">
+            <section class="panel">
+                <p class="section-kicker">TECHNICAL SKILLS</p>
+                <h2>Tools and platforms I use</h2>
+                <p>My day-to-day work spans endpoint support, identity, security, automation, scripting, networking, and cloud technologies.</p>
+                <ul class="tech-list">
+                    <li><strong>ITSM:</strong> Jira Service Management (JSM/Jira), ManageEngine SupportCenter Plus, incident/request workflows, documentation</li>
+                    <li><strong>Identity:</strong> Okta administration, user lifecycle, groups, SSO, MFA, access troubleshooting</li>
+                    <li><strong>Security:</strong> Rapid7, vulnerability management, vulnerability remediation, phishing and incident investigation</li>
+                    <li><strong>Automation:</strong> Tines flows and automations, PowerShell, Python, Bash, repeatable workflow design</li>
+                    <li><strong>Endpoints:</strong> Windows, macOS, Linux/Unix, endpoint management, troubleshooting, hardware repair</li>
+                    <li><strong>Infrastructure:</strong> Active Directory, Windows Server, VMware, Hyper-V, firewalls, NVR/camera systems</li>
+                    <li><strong>Networking:</strong> TCP/IP, DNS, DHCP, VPNs, switching, firewalls, Nmap, Wireshark</li>
+                    <li><strong>Cloud:</strong> AWS fundamentals, cloud architecture concepts, ongoing Solutions Architect Associate study</li>
                 </ul>
             </section>
 
-            <!-- Gallery Section -->
-            <section class="gallery">
-                <h2>3D Prints</h2>
-                <p>I didn't design these but check out my instagram!</p>
-                <a href="https://www.instagram.com/five_more.minutes?igsh=NTc4MTIwNjQ2YQ==">5 More Minutes</a>
+            <section class="panel" id="projects">
+                <p class="section-kicker">PROJECTS & MAKING</p>
+                <h2>3D printing</h2>
+                <p>I use 3D printing for functional builds, experimentation, and projects around the house and workspace.</p>
                 <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="/images/Suspended Moon.JPG" alt="Project 1">
-                        <p>Moon Suspension</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="/images/Lego Drawer.JPG" alt="Project 2">
-                        <p>Lego Drawer (stackable)</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="/images/HalfSkullHalfMan.JPG" alt="Project 3">
-                        <p>Half Skull: Half Philosopher</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="/images/MandoHelmet.JPG" alt="Project 4">
-                        <p>Wearable Mandalorian Helmet</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="/images/Pumpkins1.JPG" alt="Project 5">
-                        <p>Little Halloween Pumpkins Part 1</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="/images/StarWarsOrnament.JPG" alt="Project 7">
-                        <p>Millennium Falcon Ornament</p>
-                    </div>
+                    <div class="gallery-item"><img src="/images/Suspended Moon.JPG" alt="Suspended moon 3D print"><p>Moon Suspension</p></div>
+                    <div class="gallery-item"><img src="/images/Lego Drawer.JPG" alt="Stackable Lego drawer"><p>Stackable Lego Drawer</p></div>
+                    <div class="gallery-item"><img src="/images/HalfSkullHalfMan.JPG" alt="Half skull half philosopher print"><p>Half Skull / Half Philosopher</p></div>
+                    <div class="gallery-item"><img src="/images/MandoHelmet.JPG" alt="Mandalorian helmet print"><p>Wearable Mandalorian Helmet</p></div>
+                    <div class="gallery-item"><img src="/images/Pumpkins1.JPG" alt="Halloween pumpkin prints"><p>Halloween Pumpkins</p></div>
+                    <div class="gallery-item"><img src="/images/StarWarsOrnament.JPG" alt="Millennium Falcon ornament"><p>Millennium Falcon Ornament</p></div>
                 </div>
             </section>
-        </main>
-    </div>
+        </div>
+    </main>
 </body>
 </html>
